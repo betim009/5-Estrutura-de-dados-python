@@ -12,3 +12,7 @@
 # O objetivo do nosso script será realizar a soma de uma lista de números
 # aleatórios utilizando as duas implementações de memória.
 # Os dados serão sempre armazenados como strings!
+
+"""
+    Diretório /PC referente ao exercício 01
+"""

@@ -9,10 +9,12 @@ secondary = SecondaryMemory()
 # Números aleatórios a serem somados
 RANDOM_NUMBERS = ["36912", "84300"] * 100
 
+
 def timer(string, initial_time):
     """Função auxiliar para print temporizado"""
     print(string)
-    print(f"Tempo para a tarefa terminar: {perf_counter() - initial_time:6f}\n")
+    print(
+        f"Tempo para a tarefa terminar: {perf_counter() - initial_time:6f}\n")
 
 
 # Desempenho da memória primária

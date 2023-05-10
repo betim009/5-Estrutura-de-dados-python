@@ -21,6 +21,13 @@ class ListaArray:
         # insere um elemento no index informado
         return self.data.insert(index, value)
 
+    def remove(self, index):
+        # remove pelo index
+        return self.data.pop(index)
+
+    def update(self, index, value):
+        self.data[index] = value
+
 
 # preenchendo uma estrutura de array de dados
 array = ListaArray()
@@ -39,6 +46,17 @@ print("---------- fim do print ----------")
 array_memory_size = sys.getsizeof(array.data)
 print(f"Memory size: {array_memory_size}")
 print("--------------------")
+
+# removendo e retornando novo array
+print("Depis de excluir:")
+array.remove(0)
+print(array)
+print("--------------")
+
+
+# update no array por index
+array.update(1, "Creusa Couto")
+print(f"Update:{array}\n__________")
 
 # podemos iterar sobre seus elementos da seguinte maneira
 index = 0
